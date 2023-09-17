@@ -1,0 +1,137 @@
+html {
+  padding-left: calc(100vw - 100%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+
+.badge {
+  font-weight: 500;
+}
+
+.bg-light,
+.badge-light {
+  &,
+  * {
+    color: $text-black !important;
+  }
+}
+
+.bg-dark,
+.badge-dark {
+  &,
+  * {
+    color: $text-white !important;
+  }
+}
+
+img {
+  border-radius: 1.2%;
+}
+
+
+
+
+
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+.bg-left {
+  height: 100vh;
+  z-index:-1;
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+}
+
+.bg-right {
+  height: 100vh;
+  z-index:-1;
+  bottom:0;
+  left:50%;
+  opacity:.5;
+  position:fixed;
+  right:50%;
+  top:0;
+}
+
+
+.particle {
+	position: absolute;
+ 	border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+.particle.square {
+ 	background-image: url("/assets/css/square_001.png");
+  }
+.particle.star {
+ 	background-image: url("/assets/css/star_001.png");
+  }
+.particle.triangle {
+ 	background-image: url("/assets/css/triangle_001.png");
+  }
+
+.particle.circle {
+ 	background-image: url("/assets/css/circle_001.png");
+  }
+.particle.cross {
+ 	background-image: url("/assets/css/cross_001.png");
+  }
+.particle.hexagon {
+ 	background-image: url("/assets/css/hexagon_001.png");
+  }
+
+
+
+
+@for $i from 1 through 250 {
+	@keyframes particle-animation-#{$i} {
+		100% {
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		}
+	}
+
+	.particle:nth-child(#{$i}){
+		animation: particle-animation-#{$i} 60s infinite;
+		$size: random(10) + 8 + px;
+		opacity: random(100)/100;
+		height: $size;
+		width: $size;
+
+		animation-delay: -$i * .2s;
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+	}
+}

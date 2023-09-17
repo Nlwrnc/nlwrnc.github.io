@@ -1,0 +1,75 @@
+- title: Frontier Developments
+  from: April 2021
+  to: Present
+  position: Principal Technical Animator
+  project: F1 Manager
+  description: <ul>
+               <li>Assisting and supporting the animation team</li>
+               <li>Maintaining and developing animation tools</li>
+               </ul>
+
+- title: Rocksteady
+  from: July 2019
+  to: March 2021
+  position: Senior Technical Animator
+  project: Suicide Squad Kill the Justice League
+  description: <ul>
+               <li>Assisting and supporting the animation team</li>
+               <li>Maintaining and developing animation tools</li>
+               <ul>
+                 <li>Facial pipeline</li>
+                 <li>Creating a SQL database for tracking assets</li>
+                 <li>Standalone batch tool</li>
+               </ul>
+               <li>Research and prototype new tools and techniques</li>
+               <li>Working with outsource on streamlining workflows and tools</li>
+               </ul>
+- title: MPC
+  from: February 2018
+  to: June 2018
+  position: Animation Discipline Developer
+  project: The Lion King
+  description: <ul>
+               <li>Assisting and supporting the animation team</li>
+               <li>Maintaining and developing animation tools</li>
+               <ul>
+                 <li>Automated geometry caching for large and complex scenes</li>
+                 <li>Automating workflows for generating animations used in virtual production</li>
+                 <li>Viewport presets</li>
+               </ul>
+               <li>Collaborating with the software department in creating and developing tools</li>
+               <li>Assisting and supporting with virtual production</li>
+               </ul>
+
+- title: Mikros Animation
+  from: September 2017
+  to: January 2018
+  position: Technical Animator
+  project: Sherlock Gnomes
+  description: <ul>
+               <li>Assisting and supporting the animation team</li>
+               <li>Maintaining and developing animation tools</li>
+               <li>Render wrangling</li>
+               </ul>
+
+- title: Creative Assembly
+  from: August 2015
+  to: October 2017
+  position: Technical Animator
+  project: Halo Wars 2
+  description: <ul>
+    <li>Assisting and supporting the animation team</li>
+    <li>Maintaining and developing animation tools</li>
+    <ul>
+    <li>Unit creator for generating necessary files for an asset</li>
+    <li>Searchable display layers</li>
+    <li>Rescale tool for adjusting the size of assets and animations in gam</li>
+    </ul>
+    <li>Rigging and skinning assets</li>
+    <li>Implementing assets in engine</li>
+    </ul>
+
+- title: Teeside University
+  from: 2011
+  to: 2014
+  position: BA(Hons) Computer Animation 1:1

@@ -1,0 +1,17 @@
+description: Proficient in Maya, MotionBuilder, Python and Qt, as well as having experience building SQL databases, developing and compiling plugins for Maya and MotionBuilder, working with the FBX SDK and utilising various version control systems (Git, Perforce, SVN).
+entries:
+  - name: Maya
+    percentage: 80
+    color: 55ab64
+
+  - name: MotionBuilder
+    percentage: 70
+    color: db9356
+
+  - name: Qt
+    percentage: 70
+    color: ad9dd9
+
+  - name: Python
+    percentage: 85
+    color: 48a9b5

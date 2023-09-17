@@ -1,0 +1,91 @@
+### Site Settings ###
+title               : nlwrnc
+description         : I'm a technical animator with experience in both film and games.<br><br>
+  Always striving to offer the best tools, solutions and support to allow artists to work effectively and efficiently. Constantly exploring new techniques and technologies and continuously collaborating with artists and developers to create, improve and maintain tools and workflows.
+
+baseurl             : nlwrnc.github.io                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : nlwrnc/nlwrnc.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : YoussefRaafatNasry/portfolYOU
+open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Nathan Lawrence
+  image             : https://www.gravatar.com/avatar/f506e6319bde4f4893aff5c4a25340ff?s=400
+  behance           : nathanlwrnc
+# dribbble          : your_username
+  email             : nathanlwrnc@gmail.com
+  facebook          : your_username
+  github            : Nlwrnc
+# gitlab            : your_username
+# instagram         : your_username
+# kaggle            : your_username
+  linkedin          : nlwrnc
+#  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+#  twitter           : your_username
+  vimeo             : nathanlwrnc
+# youtube           : your_channel_name
+# keybase           : your_username
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Disqus ###
+disqus:
+  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

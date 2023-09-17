@@ -1,0 +1,40 @@
+{%- assign items = tab_items | strip | newline_to_br | split: '<br />' -%}
+
+<div class="container">
+
+  {%- if include.title -%}
+    <h5>{{ include.title }}</h5>
+  {%- endif -%}
+
+  <ul class="nav nav-tabs">
+    {% for item in items %}
+      {%- assign item_object = item | strip | split : ',' -%}
+      {%- assign title_object = include.title | replace: " ", "" -%}
+      <li class="nav-item">
+      {%- if include.active == item_object[0] -%}
+        <a class="nav-link active" data-toggle="tab" href="#{{ title_object }}{{ item_object[0] }}">{{ item_object[0] }}</a>
+      {%- else -%}
+        <a class="nav-link" data-toggle="tab" href="#{{ title_object }}{{ item_object[0] }}">{{ item_object[0] }}</a>
+      {%- endif -%}
+      </li>
+
+    {% endfor %}
+  </ul>
+
+  <div class="tab-content">
+    {% for item in items %}
+      {%- assign item_object = item | strip | split : ',' -%}
+      {%- if include.active == item_object[0] -%}
+    {%- assign title_object = include.title | replace: " ", "" -%}
+      <div id="{{ title_object }}{{ item_object[0] }}" class="tab-pane fade in active show">
+      {%- else -%}
+      <div id="{{ title_object }}{{ item_object[0] }}" class="tab-pane fade in">
+      {%- endif -%}
+        <br>
+        <div style="padding-left: 20px;">
+          <p>{{ item_object[1] }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
