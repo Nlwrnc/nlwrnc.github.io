@@ -6,7 +6,7 @@ weight: 3
 ---
 
 
-<h1 style="color:#55ab64; font-family: Noto Sans, sans-serif; font-size: 80px; padding-bottom:0px; margin-bottom:0px">NATHAN LAWRENCE</h1>
+<h1 style="color:#55ab64; font-family: Noto Sans, sans-serif; font-size: 4em; padding-bottom:0px; margin-bottom:0px">NATHAN LAWRENCE</h1>
 <h2 style="color:#bdbdbd; padding-top:0px; margin-top:0px">Technical Animator</h2>
 
 <h2 class="mb-3">Personal Profile</h2>
@@ -17,7 +17,7 @@ A combination of creative and technically minded with a solid understanding and 
         <h2 class="mb-3">History</h2>
         {% include about/timeline.html %}
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-5">
         {% assign software_code_description = "text etc." %}
         {% include about/skills.html title="Software & Code" description=site.data.software-code.description source=site.data.software-code.entries %}
         <h2 class="mb-3">Skills</h2>
