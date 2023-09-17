@@ -3,7 +3,7 @@ title               : nlwrnc
 description         : I'm a technical animator with experience in both film and games.<br><br>
   Always striving to offer the best tools, solutions and support to allow artists to work effectively and efficiently. Constantly exploring new techniques and technologies and continuously collaborating with artists and developers to create, improve and maintain tools and workflows.
 
-baseurl             : nlwrnc.github.io                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             : ""                    # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : nlwrnc/nlwrnc.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
