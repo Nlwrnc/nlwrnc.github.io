@@ -2,7 +2,6 @@
   [data-theme="light"] & {
     #{$property}: $light-value;
 
-
   }
 
   [data-theme="dark"] & {
@@ -13,6 +12,16 @@
 #theme-toggler:before {
   @include themed(content, "🌙", "☀️");
 }
+
+.nav .nav-link{
+    color: $dark;
+
+  }
+
+  .nav .active{
+    color: $light;
+
+  }
 
 .navbar-themed {
   .navbar-brand,

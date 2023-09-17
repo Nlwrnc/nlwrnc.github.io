@@ -30,6 +30,16 @@ $dark-900: #17191a;
     filter: drop-shadow(8px 8px 10px black);
   }
 
+  .nav .nav-link{
+    color: $light;
+
+  }
+
+  .nav .active{
+    color: $dark;
+
+  }
+
   // Inputs
   input {
     background-color: $dark-300;
