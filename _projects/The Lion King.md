@@ -1,8 +1,9 @@
 ---
 name: The Lion king
-tools: []
+tools: [Film, 2019]
 image: https://upload.wikimedia.org/wikipedia/en/9/9d/Disney_The_Lion_King_2019.jpg
 description: Simba, a young lion prince, flees his kingdom after the murder of his father, Mufasa. Years later, a chance encounter with Nala, a lioness, causes him to return and take back what is rightfully his.
+year: 2019
 ---
 
 # The Lion King

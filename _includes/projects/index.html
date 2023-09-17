@@ -35,7 +35,8 @@
   {% endfor %}
 
   <!-- Local Projects -->
-  {% for project in site.projects %}
+  {% assign sorted_pages = site.projects  | sort:"year" | reverse %}
+  {% for project in sorted_pages %}
 
     {%- assign project_type  = "local" -%}
     {%- assign project_id    = project.name | slugify -%}

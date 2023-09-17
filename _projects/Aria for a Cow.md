@@ -1,8 +1,9 @@
 ---
 name: Aria for a Cow
-tools: []
+tools: [Short Film, 2016]
 image: /assets/projects/thumbnails/aria_for_a_cow.jpg
 description: Aria, a bovine diva, demands to be respected for more than just her dairy products. An animated musical short featuring a previously unreleased song by Howard Ashman & Alan Menken
+year: 2016
 ---
 
 # Aria for a Cow

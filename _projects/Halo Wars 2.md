@@ -1,8 +1,9 @@
 ---
 name: Halo Wars 2
-tools: []
+tools: [Game, 2017]
 image: https://upload.wikimedia.org/wikipedia/en/f/f6/Hw2_coverart.png
 description: After spending decades in cryogenic sleep, the crew of the Spirit of Fire wake to find themselves on a Forerunner installation known as the Ark. But they are not alone.
+year: 2017
 ---
 
 # Halo Wars 2

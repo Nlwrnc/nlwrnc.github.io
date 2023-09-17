@@ -1,8 +1,9 @@
 ---
 name: Suicide Squad Kills the Justice League
-tools: []
+tools: [Game, 2024]
 image: https://upload.wikimedia.org/wikipedia/en/2/2e/Suicide_Squad_Kill_the_Justice_League_cover_art.jpg
-description: Suicide Squad Kill the Justice League, is a genre-defying, action-adventure third-person shooter from Rocksteady Studios, creators of the critically acclaimed Batman Arkham series. 
+description: Suicide Squad Kill the Justice League, is a genre-defying, action-adventure third-person shooter from Rocksteady Studios, creators of the critically acclaimed Batman Arkham series.
+year: 2024
 ---
 
 # Suicide Squad: Kills the Justice League

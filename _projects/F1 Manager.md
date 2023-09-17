@@ -1,8 +1,9 @@
 ---
 name: F1 Manager 2022
-tools: []
+tools: [Game, 2022]
 image: https://upload.wikimedia.org/wikipedia/en/7/7c/F1_Manager_2022_game_cover.jpg
-description: F1 Manager 2022 is the official racing management simulation game of the 2022 Formula One, Formula 2, and Formula 3 championships developed and published by Frontier Developments 
+description: F1 Manager 2022 is the official racing management simulation game of the 2022 Formula One, Formula 2, and Formula 3 championships developed and published by Frontier Developments
+year: 2022
 ---
 
 # F1 Manager 2022
