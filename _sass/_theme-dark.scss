@@ -57,7 +57,7 @@ $dark-900: #17191a;
   }
 
   // Cards
-  .card {
+  .card{
     background-color: $dark-600;
   }
 
@@ -65,6 +65,12 @@ $dark-900: #17191a;
     .card-footer {
       background-color: rgba(0, 0, 0, 0.1);
     }
+  }
+  .card-text{
+      &,
+      * {
+        color: $subtext-black !important;
+      }
   }
 
   // Tables

@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'icon_font';
+  src:  url('../fonts/icon_font.eot?4tb0qg');
+  src:  url('../fonts/icon_font.eot?4tb0qg#iefix') format('embedded-opentype'),
+    url('../fonts/icon_font.ttf?4tb0qg') format('truetype'),
+    url('../fonts/icon_font.woff?4tb0qg') format('woff'),
+    url('../fonts/icon_font.svg?4tb0qg#icon_font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon_font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cplusplus .path1:before {
+  content: "\e900";
+  color: rgb(0, 89, 156);
+}
+.icon-cplusplus .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(0, 68, 130);
+}
+.icon-cplusplus .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(101, 154, 210);
+}
+.icon-cplusplus .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-maya .path1:before {
+  content: "\e904";
+  color: rgb(54, 105, 127);
+}
+.icon-maya .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(55, 165, 204);
+}
+.icon-maya .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(125, 198, 221);
+}
+.icon-maya .path4:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-motionbuilder .path1:before {
+  content: "\e908";
+  color: rgb(79, 98, 39);
+}
+.icon-motionbuilder .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(136, 169, 67);
+}
+.icon-motionbuilder .path3:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(167, 195, 106);
+}
+.icon-motionbuilder .path4:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9294;
+}
+.icon-python .path1:before {
+  content: "\e90c";
+  color: rgb(90, 159, 212);
+}
+.icon-python .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(255, 232, 115);
+}
+.icon-qt .path1:before {
+  content: "\e90e";
+  color: rgb(65, 205, 82);
+}
+.icon-qt .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}

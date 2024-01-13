@@ -6,11 +6,15 @@ behance:
   icon  : fab fa-behance
   color : 1769ff
 
+website:
+  url: https://nlwrnc.github.io
+  icon: fas fa-globe
+  color: 55ab64
+
 email:
   url   : "mailto:"
   icon  : fas fa-envelope
   color : db4437
-
 
 github:
   url   : https://github.com/
@@ -26,3 +30,5 @@ vimeo:
   url   : https://vimeo.com/
   icon  : fab fa-vimeo-v
   color : 162221
+
+

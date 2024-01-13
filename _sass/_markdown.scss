@@ -55,7 +55,6 @@
     background: $light;
     border: 1px solid #ddd;
     color: $dark;
-    font-family: monospace;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 1.6em;
@@ -105,7 +104,7 @@
       @extend td;
       padding-top: 12px;
       padding-bottom: 12px;
-      font-weight: 500;
+      font-weight: 300;
       text-align: left;
       background-color: $primary;
       color: white;

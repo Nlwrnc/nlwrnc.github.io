@@ -1,6 +1,6 @@
 ### Site Settings ###
 title               : nlwrnc
-description         : I'm a technical animator with experience in both film and games.<br><br>
+description         : <strong>Hi, Im Nathan Lawrence a technical animator with 10 years of experience in both film and games.</strong><br><br>
   Always striving to offer the best tools, solutions and support to allow artists to work effectively and efficiently. Constantly exploring new techniques and technologies and continuously collaborating with artists and developers to create, improve and maintain tools and workflows.
 
 baseurl             : ""                    # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
@@ -17,6 +17,8 @@ plugins:
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
   - pages/tags.html
+  - pages/portfolio-tags.html
+  - pages/project-tags.html
   - pages/404.html
   - pages/index.md
 
@@ -25,11 +27,12 @@ nav_exclude:                                            # The following paths ar
 author:
   name              : Nathan Lawrence
   image             : https://www.gravatar.com/avatar/f506e6319bde4f4893aff5c4a25340ff?s=400
-  behance           : nathanlwrnc
+  website           :
+#  behance           : your_username
 # dribbble          : your_username
   email             : nathanlwrnc@gmail.com
-  facebook          : your_username
-  github            : Nlwrnc
+#  facebook          : your_username
+  github            : nlwrnc
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
@@ -41,9 +44,10 @@ author:
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
 #  twitter           : your_username
-  vimeo             : nathanlwrnc
+  vimeo             : nlwrnc
 # youtube           : your_channel_name
 # keybase           : your_username
+
 
 
 ### Posts ###
@@ -55,6 +59,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+  portfolio:
+    output: true
+    permalink: /portfolio/:name
 
 
 ### Disqus ###
@@ -74,6 +81,11 @@ defaults:
   - scope:
       path: ""
       type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "portfolio"
     values:
       layout: "page"
   - scope:

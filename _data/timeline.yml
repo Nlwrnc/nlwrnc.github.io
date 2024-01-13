@@ -2,7 +2,7 @@
   from: April 2021
   to: Present
   position: Principal Technical Animator
-  project: F1 Manager | Warhammer Age of Sigmar - Realms of Ruin
+  project: <a href="/projects/warhammer-age-of-sigmar-realms-of-ruin">Warhammer Age of Sigmar - Realms of Ruin</a> | <a href="/projects/f1-manager-2023">F1 Manager 2023</a> | <a href="/projects/f1-manager-2022">F1 Manager 2022</a>
   description: <ul>
                <li>Assisting and supporting the animation team</li>
                <li>Maintaining and developing animation tools</li>
@@ -12,7 +12,7 @@
   from: July 2019
   to: March 2021
   position: Senior Technical Animator
-  project: Suicide Squad Kill the Justice League
+  project: <a href="/projects/suicide-squad-kills-the-justice-league">Suicide Squad Kill the Justice League</a>
   description: <ul>
                <li>Assisting and supporting the animation team</li>
                <li>Maintaining and developing animation tools</li>
@@ -26,9 +26,9 @@
                </ul>
 - title: MPC
   from: February 2018
-  to: June 2018
+  to: June 2019
   position: Animation Discipline Developer
-  project: The Lion King
+  project: <a href="/projects/the-lion-king">The Lion King</a>
   description: <ul>
                <li>Assisting and supporting the animation team</li>
                <li>Maintaining and developing animation tools</li>
@@ -45,7 +45,7 @@
   from: September 2017
   to: January 2018
   position: Technical Animator
-  project: Sherlock Gnomes
+  project: <a href="/projects/sherlock-gnomes">Sherlock Gnomes</a>
   description: <ul>
                <li>Assisting and supporting the animation team</li>
                <li>Maintaining and developing animation tools</li>
@@ -56,14 +56,14 @@
   from: August 2015
   to: October 2017
   position: Technical Animator
-  project: Halo Wars 2
+  project: <a href="/projects/halo-wars-2">Halo Wars 2</a>
   description: <ul>
     <li>Assisting and supporting the animation team</li>
     <li>Maintaining and developing animation tools</li>
     <ul>
     <li>Unit creator for generating necessary files for an asset</li>
     <li>Searchable display layers</li>
-    <li>Rescale tool for adjusting the size of assets and animations in gam</li>
+    <li>Rescale tool for adjusting the size of assets and animations in game</li>
     </ul>
     <li>Rigging and skinning assets</li>
     <li>Implementing assets in engine</li>

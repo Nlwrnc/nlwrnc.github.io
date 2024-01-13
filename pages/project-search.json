@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /project-search.json
+---
+[
+  {% for project in site.projects %}
+    {
+      "title"    : "{{ project.name | escape }}",
+      "category" : "{{ project.category }}",
+      "tags"     : "{{ project.tools | join: ', ' }}",
+      "url"      : "{{ project.external_url | default: project.url | relative_url }}",
+      "date"     : "{{ project.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
