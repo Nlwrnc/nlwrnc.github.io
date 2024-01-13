@@ -1,0 +1,13 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+    <div class="card text-themed">
+        <div class="card-body">
+            <p title="Tasks"  class="card-text"><i class="fa fa-tasks" aria-hidden="true"></i>    Tasks:</p>
+            <ul class="card-text" >
+            {% for task in {{include.tasks}} %}
+                <li>{{task}}</li>
+            {%endfor%}
+            </ul>
+      </div>
+    </div>
+</div>
+<br>

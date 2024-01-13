@@ -1,0 +1,27 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+<div class="row justify-content-left align-items-left">
+    <div class="col-md-7">
+    <div class="project">
+        <div class="card-body">
+            <p title="Company"><i class="fa fa-building" aria-hidden="true"></i>   {{ include.company }}</p>
+            <p title="Role"><i class="fa fa-id-badge" aria-hidden="true"></i>   {{ include.role }}</p>
+            <p title="Tasks"><i class="fa fa-tasks" aria-hidden="true"></i>    Tasks:</p>
+            <ul>
+            {% for task in {{include.tasks}} %}
+                <li>{{task}}</li>
+            {%endfor%}
+            </ul>
+        </div>
+    </div>
+    </div>
+<div class="col-md-5">
+    <div>
+        <div class="project">
+            <div class="card-body">
+                <p title="Info">{{ include.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>

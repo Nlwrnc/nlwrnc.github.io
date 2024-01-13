@@ -1,0 +1,24 @@
+<p id="{{ portfolio_id }}-tools" class="card-text">
+    {%- for tool in include.tags -%}
+    {% if tool == "Game" %}
+    <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+    {% elsif tool == "Film" or tool == "Short Film" %}
+    <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><i class="fa fa-film" aria-hidden="true"></i></span>
+    {% elsif tool == "Python" %}
+    <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-python"><span class="path1"></span><span class="path2"></span></span></span>
+    {% elsif tool == "C++"%}
+    <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-cplusplus"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>
+    {% elsif tool == "Maya"%}
+    <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-maya"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>
+    {% elsif tool == "MotionBuilder"%}
+    <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-motionbuilder"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>
+    {% elsif tool == "Qt"%}
+    <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-qt"><span class="path1"></span><span class="path2"></span></span></span>
+    {% else %}
+    <span class="badge badge-pill text-muted border border-muted ml-1">{{ tool }}</span>
+    {% endif %}
+    {%- endfor -%}
+    {%- if include.year -%}
+    <span class="badge badge-pill text-muted border border-muted float-right">{{ include.year }}</span>
+    {%- endif -%}
+</p>
