@@ -1,0 +1,40 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ portfolio_url }}" class="portfolio card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    {%- if portfolio_img -%}
+    <img id="{{ portfolio_id }}-img" class="card-img-top" src="{{ portfolio_img }}" alt="{{ portfolio_name }}" />
+    {%- endif -%}
+    <div class="card-body">
+      <h5 id="{{ portfolio_id }}-name" class="card-title">
+          {%- if portfolio_type == "remote" -%}
+          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
+          {%- endif -%}
+        {{ portfolio_name }}
+      </h5>
+      <div class="text-truncate-container">
+      <span id="{{ portfolio_id }}-desc" class="card-text" title="{{portfolio_desc}}">{{ portfolio_desc }}</span>
+      </div>
+      <br>
+      <p id="{{ portfolio_id }}-tools" class="card-text">
+        {%- for tool in portfolio_tools -%}
+        {% if tool == "Python" %}
+        <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-python"><span class="path1"></span><span class="path2"></span></span></span>
+        {% elsif tool == "C++"%}
+        <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-cplusplus"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>
+        {% elsif tool == "Maya"%}
+        <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-maya"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>
+        {% elsif tool == "MotionBuilder"%}
+        <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-motionbuilder"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>
+        {% elsif tool == "Qt"%}
+        <span class="badge badge-pill text-muted border border-muted ml-1" title="{{tool}}" style="font-size: 18px;"><span class="icon-qt"><span class="path1"></span><span class="path2"></span></span></span>
+        {% else %}
+        <span class="badge badge-pill text-muted border border-muted ml-1">{{ tool }}</span>
+        {% endif %}
+        {%- endfor -%}
+        {%- if portfolio_year -%}
+        <span class="badge badge-pill text-muted border border-muted float-right" >{{ portfolio_year }}</span>
+        {%- endif -%}
+      </p>
+
+    </div>
+  </a>
+</div>

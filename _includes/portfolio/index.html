@@ -1,0 +1,29 @@
+
+<div class="card-columns m-3 mt-5">
+
+  <!-- Local Projects -->
+  {% assign sorted_pages = site.portfolio  | sort:"year" | reverse %}
+
+  {% for portfolio in sorted_pages %}
+
+    {%- assign portfolio_type  = "local" -%}
+    {%- assign portfolio_id    = portfolio.name | slugify -%}
+    {%- assign portfolio_img   = portfolio.image -%}
+    {%- assign portfolio_name  = portfolio.name -%}
+    {%- assign portfolio_desc  = portfolio.description -%}
+    {%- assign portfolio_tools = portfolio.tools -%}
+    {%- assign portfolio_year = portfolio.year -%}
+
+    {%- if portfolio.external_url -%}
+      {%- assign portfolio_url = portfolio.external_url -%}
+      {%- assign external    = true -%}
+    {%- else -%}
+      {%- assign portfolio_url = portfolio.url | relative_url -%}
+      {%- assign external    = false -%}
+    {%- endif -%}
+
+    {% include portfolio/portfolio-card.html %}
+
+  {% endfor %}
+
+</div>

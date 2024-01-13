@@ -1,0 +1,40 @@
+<!-- Collect tools from all posts -->
+{%- assign tools = blank -%}
+{%- for piece in site.portfolio -%}
+  {%- assign portfolio_tools = piece.tools | join:'|' | append:'|' -%}
+  {%- if portfolio_tools != '|' -%}
+    {%- assign tools = tools | append:portfolio_tools -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign tools = tools | split:'|' | uniq | sort -%}
+
+<!-- List tools & related portfolio pieces -->
+{% for tool in tools %}
+<div class="py-3">
+  {% if tool == "Python" %}
+    <h4 id="{{ tool | slugify }}"><span class="icon-python"><span class="path1"></span><span class="path2"></span></span></span>  {{ tool }}</h4>
+    {% elsif tool == "C++"%}
+    <h4 id="{{ tool | slugify }}"><span class="icon-cplusplus"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span> {{ tool }}</h4>
+    {% elsif tool == "Maya"%}
+    <h4 id="{{ tool | slugify }}"><span class="icon-maya"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>  {{ tool }}</h4>
+    {% elsif tool == "MotionBuilder"%}
+    <h4 id="{{ tool | slugify }}"><span class="icon-motionbuilder"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span> {{ tool }}</h4>
+    {% else %}
+    <h4 id="{{ tool | slugify }}">{{ tool }}</h4>
+    {% endif %}
+  <ul>
+  {% for piece in site.portfolio %}
+    {%- if piece.tools contains tool -%}
+      {%- if piece.external_url -%}
+        {%- assign url = piece.external_url -%}
+      {%- else -%}
+        {%- assign url = piece.url | relative_url -%}
+      {%- endif -%}
+    <a href="{{ url }}"><li>{{ piece.name }}</li></a>
+    <br/>
+    {%- endif -%}
+  {% endfor %}
+  </ul>
+</div>
+<hr class="bg-light">
+{% endfor %}

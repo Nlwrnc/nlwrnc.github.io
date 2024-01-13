@@ -6,7 +6,7 @@ description: Suicide Squad Kill the Justice League, is a genre-defying, action-a
 year: 2024
 company: Rocksteady
 role: Senior Technical Animator
-tasks: ["Assisting and supporting the animation team", "Maintaining and developing animation tools", "Developing the facial rig pipline", "Building an SQL database for tracking assets", "Creating a batch tool for running various scripts/processes on Maya and MotionBuilder files"]
+tasks: ["Assisting and supporting the animation team", "Maintaining and developing animation tools", "Developing the facial rig pipeline", "Building an SQL database for tracking assets", "Creating a batch tool for running various scripts/processes on Maya and MotionBuilder files"]
 ---
 
 # Suicide Squad: Kills the Justice League
