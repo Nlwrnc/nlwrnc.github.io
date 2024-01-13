@@ -19,6 +19,8 @@
     <h4 id="{{ tool | slugify }}"><span class="icon-maya"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span>  {{ tool }}</h4>
     {% elsif tool == "MotionBuilder"%}
     <h4 id="{{ tool | slugify }}"><span class="icon-motionbuilder"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></span> {{ tool }}</h4>
+    {% elsif tool == "Qt"%}
+    <h4 id="{{ tool | slugify }}"><span class="icon-qt"><span class="path1"></span><span class="path2"></span></span> {{ tool }}</h4>
     {% else %}
     <h4 id="{{ tool | slugify }}">{{ tool }}</h4>
     {% endif %}
