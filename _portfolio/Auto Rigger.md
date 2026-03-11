@@ -1,5 +1,5 @@
 ---
-name: Auto rigger
+name: Auto Rigger
 tools: [Maya, Python]
 image: /assets/portfolio/thumbnails/auto_rigger.png
 description: A biped rigger for Maya.
